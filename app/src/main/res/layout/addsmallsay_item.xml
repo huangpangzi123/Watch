@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--这个用于显示文件夹或文件的图片-->
+<ImageView
+    android:id="@+id/fileImages_imageView"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_marginLeft="10dp"/>
+    <!--这个用于展示文件夹名或者文件名-->
+    <TextView
+        android:id="@+id/fileName_tetxView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"/>
+</LinearLayout>

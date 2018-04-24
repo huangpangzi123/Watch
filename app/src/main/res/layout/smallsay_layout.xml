@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <!--使该文本框暂时不能使用-->
+        <EditText
+            android:id="@+id/searchSmallSay_editText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="7dp"
+            android:layout_weight="1"
+            android:hint="输入搜索内容~~"
+            android:enabled="false"
+            android:background="@drawable/shape_searchedittext"/>
+        <!--使该按钮暂时不能使用-->
+        <Button
+            android:id="@+id/searchSmallSay_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="搜索"
+            android:textColor="#ffffff"
+            android:enabled="false"
+            android:background="@drawable/shape_searchbutton"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/deleteAll_button"
+        android:text="清空小说表"
+        android:enabled="false"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="该界面功能暂未开放,请往左划动"
+        android:textSize="25sp" />
+    <!--这里添加一个RecyclerView，用来展示小说-->
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--使该悬浮按钮暂时不能使用-->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/addSmallSay_floatButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/addsmallsay"
+            app:elevation="8dp"
+            app:layout_anchor="@+id/smallSay_RecyclerView"
+            app:layout_anchorGravity="bottom|right" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/smallSay_RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--（shape是设置文本框外形的属性）
+shpae的四个属性：
+line：一条线
+rectangle：矩形
+oval：椭圆
+ring：环形
+-->
+<shape
+    android:shape="rectangle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--四个角的圆角-->
+    <corners android:radius="5dp"/>
+    <!--内边距-->
+    <padding
+        android:bottom="6dp"
+        android:left="5dp"
+        android:right="5dp"
+        android:top="6dp"/>
+
+    <!--边框属性，按需求可加可不加-->
+    <stroke android:color="#87CEFA"
+        android:width="2dp"/>
+</shape>

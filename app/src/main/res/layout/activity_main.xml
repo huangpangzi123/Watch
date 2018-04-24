@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/smallSay_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="小说"
+        android:textColor="#0A0A0A"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_weight="1"
+        android:background="@drawable/selector"/>
+    <TextView
+        android:id="@+id/movies_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="电影"
+        android:textColor="#0A0A0A"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_weight="1"
+        android:background="@drawable/selector"/>
+    <TextView
+        android:id="@+id/zhiBo_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textSize="25sp"
+        android:text="直播"
+        android:textColor="#0A0A0A"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/selector"/>
+</LinearLayout>
+    <!--引导词下方的进度条图片，提示当前是哪个界面
+        暂时不用
+    -->
+<!--<ImageView-->
+    <!--android:id="@+id/scrollBar_imageView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="15dp"-->
+    <!--android:src="@drawable/minus_64"/>-->
+<android.support.v4.view.ViewPager
+    android:id="@+id/viewPager"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+</android.support.v4.view.ViewPager>
+</LinearLayout>

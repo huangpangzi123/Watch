@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--该文件是当三个引导词被点击时，改变引导词背景颜色用的-->
+<item
+    android:state_pressed="true"
+    android:drawable="@color/press">
+</item>
+</selector>
